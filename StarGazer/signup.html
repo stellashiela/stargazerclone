@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="head-icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="head-icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="head-icon/favicon-16x16.png">
+        <link rel="manifest" href="head-icon/site.webmanifest">
+    </head>
+    <body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; accent-color: dodgerblue;">
+        <main>
+            <form action="signup.php" method="POST">
+                <fieldset>
+                    <legend style="font-size: xx-large; color: black;">Sign Up</legend>
+                    <p>
+                        <label>Name</label><br/>
+                        <input type="text" id="name" name="name" placeholder="Your Name..." required autofocus/>
+                    </p>
+                    <p>
+                        <label>Username</label><br/>
+                        <input type="text" id="username" name="username" placeholder="Username..." required/>
+                    </p>
+                    <p>
+                        <label>Email</label><br/>
+                        <input type="email" id="email" name="email" placeholder="Email..." required/>
+                    </p>
+                    <p>
+                        <label>Phone Number <span style="font-size: small;">Format: 123-456-789</span></label><br/>
+                        <input type="tel" name="phone" placeholder="Phone Number..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/>
+                    </p>
+                    <p>
+                        <label>Password</label><br/>
+                        <input type="password" name="password" placeholder="Password..." required/>
+                    </p>
+                    <p>
+                        <label for="birthday">Birth Date</label><br/>
+                        <input type="date" id="birthday" name="birthday" value="2000-01-01" required/>
+                    </p>
+                    <p>
+                        <label for="gender">Gender</label><br/>
+                        <input list="gender" name="gender" placeholder="Gender...">
+                        <datalist id="gender">
+                            <option value="male"></option>
+                            <option value="female"></option>
+                            <option value="other"></option>
+                        </datalist>
+                    </p>
+                    
+                    <p>
+                        <label>Get Up to Date!</label>
+                        <label style="font-size: small;">Subscribe for news</label><br/>
+                        <label><input type="radio" name="subscribe" value="subscribe"/>I'm in!</label>
+                        <label><input type="radio" name="subscribe" value="notsubscribe"/>No thanks</label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox" id="privacypolicy" name="privacypolicy" value="Iagree" required/> I agree to the <a href="#!" style="color: dodgerblue;">Terms of Service</a> & <a href="#!" style="color: dodgerblue;">Privacy Policy</a> </label>
+                    </p>
+                    <p>
+                        <input style="float: left; margin-right: 7px;" type="submit" name="submit" value="Sign Up"/>
+                    </p>
+                    <p >
+                        <input type="reset" value="Reset">
+                    </p>
+                    <p >
+                        Already have an Account? <a href="login.html" style="color: dodgerblue;">Login</a>
+                    </p>
+                </fieldset>
+            </form>
+        </main>
+        <hr/>
+        <nav>
+            <p ><a href="home-page.html" style="font-size: larger; color: black;">Exit</a></p>
+        </nav>
+        <hr />
+        <footer>
+            &copy; 2024 RQS Al-Bashiroh Proggrammer Class
+        </footer>
+    </body>
+</html>
+<!-- Created by: Fira -->

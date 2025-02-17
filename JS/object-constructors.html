@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function Person(first, last, age, eye, city, greeting, hobby) {
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyeColor = eye;
+                this.city = city;
+                this.greeting = function() {
+                    return "Hello, my name is " + this.firstName + " " + this.lastName + ". I'm " + this.age + " years old, and I have " + this.eyeColor + " eyes. I live in " + this.city + ".";
+                }
+                this.hobby = hobby;
+            }
+
+            const mySelf = new Person("Aoki", "Sakayanagi", 18, "Blue", "Kyoto", "", "Playing football");
+
+            document.getElementById("demo").innerHTML = mySelf.hobby
+        </script>
+        
+    </body>
+</html>

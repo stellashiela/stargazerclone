@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hello World!</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="head-icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="head-icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="head-icon/favicon-16x16.png">
+        <link rel="manifest" href="head-icon/site.webmanifest">
+        <style>
+            body {
+                background-size: 100%; background-repeat: no-repeat; color: azure; background-image: url(image/sakura4.jpg); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            a { 
+                color: pink;
+                text-decoration: none;
+            }
+            a:hover {
+                color: palevioletred;
+            }
+            .greet {
+                text-decoration: underline;
+            }
+            .search {
+                width: 20px;
+                height: 20px;
+                margin: 0px 0px -5px 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="greet">Hi There!</h1>
+            <h2>Welcome to My Home Page</h2>
+        </header>
+        <form action="" method="">
+                <label for="search"><img class="search" src="vector/search-alt-1-svgrepo-com.svg"/></label>
+                <input type="search" id="search" name="search" placeholder="search" list="article"/>
+                <datalist id="article">
+                    <option value="observatory"></option>
+                    <option value="seaside"></option>
+                    <option value="cafétaria"></option>
+                </datalist>
+        </form>  
+        <nav>
+            <p>
+                <a href="login.html">Login</a> |
+                <a href="signup.html">Sign Up</a> |
+                <a href="#about.html">About</a>
+            </p>
+        </nav>
+        <hr />
+        <main>
+            <h3>Take a Tour!</h3>
+            <h4>~Top Floor~</h4>
+            <p>
+                <a href="observatory.html">Observatory</a> 
+                <br />
+            </p>
+            <h4>~Posterior~</h4>
+            <p>
+                <a href="/CSS/seaside.html">Seaside</a>
+            </p>
+            <h4>~Underground~</h4>
+            <p>
+                <a href="cafétaria.html">Cafétaria</a>
+                <br />
+            </p>
+        </main>
+        <!-- _blank akan membuka link pada jendela atau tab baru;
+        _self akan membuka link pada halaman itu sendiri (default target);
+        _top menuju bagian paling atas pada halaman;
+        _parent membuka link pada frame induk;
+        nama-frame akan membuka link pada <iframe> dengan nama tertentu; -->
+        <hr />
+        <aside>
+            <h3>Stay Connected!</h3>
+            <label>Email: </label>
+            <a href="mailto:aokisakura1537@gmail.com" title="Send me an email">aokisakura1537@gmail.com</a>
+        </aside>
+        <hr />
+        <footer>
+            &copy; 2024 RQS Al-Bashiroh Proggrammer Class
+        </footer>
+    </body>
+</html>
+<!-- Created by: Fira -->
