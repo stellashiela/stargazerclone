@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="name"></p>
+        <p id="result"></p>
+        <script>
+            let myFirstName = "Stella";
+            let myLastName = "Ashiela";
+            let fullName = myFirstName + " " + myLastName;
+            var x = 2;
+            var y = 3;
+            var z = x + y + "s"
+            document.getElementById("demo").innerHTML = fullName;
+            document.getElementById("name").innerHTML = myFirstName + " " + myLastName;
+            document.getElementById("result").innerHTML = z;
+        </script>
+        <p id="thatsnot"></p>
+        <script>
+            let text1 = "That's not ";
+            let text2 = "a sentence.";
+            text1 += "mine";
+            document.getElementById("thatsnot").innerHTML = text1;
+        </script>
+        <p id="array"></p>
+        <script>
+            const flower = ["Sakura", "Rose", "Freesia"];
+            document.getElementById("array").innerHTML = flower[2];
+        </script>
+        <p id="object"></p>
+        <p id="object1"></p>
+        <script>
+            const person = {
+                name: "Sakura",
+                age: 24,
+                city: "Tokyo",
+                hobby: "Reading"
+            };
+            const stella = {
+                firstName: "Stella",
+                lastName: "Ashiela",
+                age: 23,
+                city: "Osaka",
+                hobby: "Painting",
+                fullName: function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+
+            delete stella.age
+
+            document.getElementById("object").innerHTML = "Hi! my name is " + stella.fullName() + ", people can call me; " + stella.firstName + ". I'm " + stella.age + " years old. I live in " + stella.city + ", and my hobby is " + stella.hobby;
+            document.getElementById("object1").innerHTML = stella.fullName();
+
+        </script>
+        <p id="function"></p>
+        <script>
+            function test(t) {
+                return "Hello, " + t;
+            }
+
+            let hello = test("Stargazer");
+            document.getElementById("function").innerHTML = hello + "!";
+        </script>
+        <p id="text"></p>
+        <script>
+            const member = {
+                name: "Sakura",
+                age: 24,
+                city: "Tokyo",
+                hobby: "Reading",
+            };
+
+            const array = Object.values(member);
+
+            let text = "";
+            for (let x in member) {
+                text += member[x] + " ";
+            };
+
+            let text3 = "";
+            for (let [type, data] of Object.entries(member)){
+                text3 += type + " = " + data + "<br>";
+            };
+
+            document.getElementById("text").innerHTML = text + array + "<br>" + text3;
+
+
+        </script>
+    </body>
+</html>
